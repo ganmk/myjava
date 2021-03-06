@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mybook-model" />
+        <module name="mybook-mapper" />
+        <module name="mybook-web" />
+        <module name="mybook-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mybook" target="8" />
+      <module name="mybook-mapper" target="1.8" />
+      <module name="mybook-model" target="8" />
+      <module name="mybook-service" target="1.8" />
+      <module name="mybook-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mybook-mapper" options="-parameters" />
+      <module name="mybook-model" options="-parameters" />
+      <module name="mybook-service" options="-parameters" />
+      <module name="mybook-web" options="-parameters" />
+    </option>
+  </component>
+</project>
